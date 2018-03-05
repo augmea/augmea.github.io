@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106616763-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<title>AUGMEA Simulation and VR Technologies Inc.</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/w3.css" rel="stylesheet" type="text/css">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+	/*background-image: url(images/augbg.png);*/
+	min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+	background-image: url(images/image01.png);
+	min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+	background-image: url(images/leopard2A4_vs2_01.png);
+	min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<!--div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  </div>
+</div-->
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><img src="images/logo_white.png" alt="" width="950" height="225" id="augLogo" /></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <!--p class="w3-center"><em>We love simulation</em></p-->
+  <p>
+Our company provides Simulation, Virtual Reality and Augmented Reality products, turn-key solutions and services for the defense, security, aerospace, transportation, infrastructure and logistics industries as well as the military forces of the region.
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Welcome to Augmea Immersive Platform&#8482;</b></p><br>
+      <img src="images/leopard2A4_vs2_01_small.png" class="w3-round w3-image " alt="Leopard 2A4 Interior" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Our mission is to create life-like and highest fidelity Virtual Reality, Augmented Reality and Simulation applications for training, visualization, mission rehearsel, research, development, analysis, experiencing and collaboration needs in the markets we serve. Based on our vision “To be the Leader of the Immersive Era”, we develop disruptive virtual technologies enabling our users to fully immerse themselves in the virtual and synthetic environments to make their jobs more productive, cost-effective and meaningful.  Our “Augmea Immersive Platform&#8482;” is a state-of-the-art technology with years of RnD spending behind it, with features and capabilities like 90Hz image rendering, physics engine, advanced AI, audio simulation, multi-channel projection and content creation tools addressing the full immersion synthetic environments needs.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Products and Solutions:</p>
+  
+  <!--
+  <p><em class="fa fa-arrow-right"></em><em class="w3-large">Synthetic Threat Environments</em><br>
+  Computer Generated Forces, Semi-Automated Forces, Tactical Wargaming, Doctrine Development, Platform Development, Test and Analyses</p>
+  
+  <p><em class="fa fa-arrow-right"></em><em class="w3-large">Platform Simulators</em><br>
+  Air, Space, Naval, Land Vehicles and Systems</p>
+  
+  <p><em class="fa fa-arrow-right"></em><em class="w3-large">Close Combat Tactical Simulators</em><br>
+  Military Operations on Urban Terrain, Special Forces, Navy Seals</p>
+  
+  <p><em class="fa fa-arrow-right"></em><em class="w3-large">Virtual Military Operations and Drills</em><br>
+  Pre-mission Virtual Rehearsels, Joint Operations in Virtual Environments</p>
+  
+  <p><em class="fa fa-arrow-right"></em><em class="w3-large">Interactive Immersive Virtual Prototyping Systems</em><br>
+  Product Design, Development, Engineering</p>
+  
+  <p><em class="fa fa-arrow-right"></em><em class="w3-large">Virtual Maintenance Trainers</em><br>
+  Platform, Equipment, Weapon Systems</p>
+  
+  <p><em class="fa fa-arrow-right"></em><em class="w3-large">Infrastructural and Industrial Simulations</em><br>
+  </p>
+  -->
+  
+  <!--<div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>-->
+<div class="w3-row w3-center">
+
+  <div class="w3-third w3-padding">
+   <div class=" w3-light-grey" style="height: 220px">
+   	<span class="w3-xlarge">Synthetic Threat Environments</span><br>
+    Computer Generated Forces, Semi-Automated Forces, Tactical Wargaming, Doctrine Development, Platform Development, Test and Analyses
+   </div>
+  </div>
+  
+  <div class="w3-third w3-padding">
+   <div class=" w3-light-grey" style="height: 220px">
+   	<span class="w3-xlarge">Platform Simulators</span><br>
+    Air, Space, Naval, Land Vehicles and Systems
+   </div>
+  </div>
+  
+  <div class="w3-third w3-padding">
+   <div class=" w3-light-grey" style="height: 220px">
+   	<span class="w3-xlarge">Virtual Military Operations and Drills</span><br>
+    Pre-mission Virtual Rehearsels, Joint Operations in Virtual Environments
+   </div>
+  </div>
+  
+</div>
+
+<div class="w3-row w3-center">
+  <div class="w3-third w3-padding">
+   <div class=" w3-light-grey" style="height: 220px">
+   	<span class="w3-xlarge">Close Combat Tactical Simulators</span><br>
+    Military Operations on Urban Terrain, Special Forces, Navy Seals
+   </div>
+  </div>
+  
+  <div class="w3-third w3-padding">
+   <div class=" w3-light-grey" style="height: 220px">
+   	<span class="w3-xlarge">Virtual AI Trainers</span><br>
+    Synthetic environments for training machine learning algorithms
+   </div>
+  </div>
+  
+  <div class="w3-third w3-padding">
+   <div class=" w3-light-grey" style="height: 220px">
+   	<span class="w3-xlarge">Interactive Immersive Virtual Prototyping Systems</span><br>
+    Product Design, Development, Engineering
+   </div>
+  </div>
+</div>
+
+<div class="w3-row w3-center">
+  
+  <div class="w3-half w3-padding">
+   <div class=" w3-light-grey" style="height: 120px">
+   	<span class="w3-xlarge">Virtual Maintenance Trainers</span><br>
+    Platform, Equipment, Weapon Systems
+   </div>
+  </div>
+  
+  <div class="w3-half w3-padding">
+   <div class=" w3-light-grey" style="height: 120px">
+   	<span class="w3-xlarge">Infrastructural and Industrial Simulations</span><br>
+    
+   </div>
+  </div>
+  
+</div>
+
+</div>
+
+
+<!--
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+-->
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content2 w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center"><em>Here are some screenshots from our rendering engine.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/canal_23.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/canal_11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/canal_17.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/canal_09.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="images/screenshot0024.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/screenshot0030.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/semdinli0002.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/screenshot0014.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+   
+  </div>
+  
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="images/dismounted/dismounted00.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/dismounted/dismounted09.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/dismounted/dismounted05.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/dismounted/dismounted11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+  
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE WE WORK?</h3>
+  <p class="w3-center"><em>We'd like to hear from you!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> TeknoPark Istanbul, No: 1/3A Z05<br>
+        <i class="fa fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 34906 Pendik, Istanbul / Turkey<br>
+        <!--<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>-->
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@augmea.com<br>
+      </div>
+      <!--p>Be our guests, or leave us a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form-->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <!--<div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(40.920436, 29.315154);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+window.onload = function() {changeLogo()}; 
+window.onresize = function() {changeLogo()};
+function changeLogo(){
+	var width = "innerWidth" in window 
+               ? window.innerWidth
+               : document.documentElement.offsetWidth; 
+	//console.log(width);
+	var image = document.getElementById("augLogo");
+	if(width <= 950)
+	{
+		image.src = "images/logo_white_small.png";
+		image.width = 400;
+		image.height = 400;
+	}
+	else
+	{
+		image.src = "images/logo_white.png";
+		image.width = 950;
+		image.height = 225;
+	}
+}
+	
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqMk9u4s6BA9YamgD0xftkpYyjo7nOt-k&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
